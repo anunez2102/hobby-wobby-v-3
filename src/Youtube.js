@@ -19,45 +19,56 @@ const finalURL = `https://www.googleapis.com/youtube/v3/playlistItems?key=${API}
 //&maxResults=10
 
 //playlists
-//or playlist????? PLYwi9QXsi-wxBatNFolTGD5nWDx2IWgrM <mine>
 //hobbywobby playlist id: PLYwi9QXsi-wxBatNFolTGD5nWDx2IWgrM
 //https://www.googleapis.com/youtube/v3/playlists?key=AIzaSyBo8jUQq40ADaLaobk9cje2k82iJKX2dNQ&channelId=UCSQzo6K4ao4FqswtWAzvO9w&part=snippet,id&order=date&maxResults=10
 
 class Youtube extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={
-            resultyt:[]
+        this.state = {
+            resultyt: []
         };
-        this.clicked=this.clicked.bind(this);
+        this.clicked = this.clicked.bind(this);
     }
 
-clicked (){
-    fetch(finalURL)
-    .then((response) => response.json()) //promise
-    .then((responseJson) => {
-      //console.log(responseJson)
-      const resultyt=responseJson.items.map(obj => obj.snippet.title); //loops through items
-      this.setState({resultyt});
-      console.log(this.state.resultyt)
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-//test#1 >>console reads clicked when Hobby Search button is clicked
-//console.log('clicked');
-}
+    clicked() {
+        fetch(finalURL)
+            .then((response) => response.json()) //promise
+            .then((responseJson) => {
+                //console.log(responseJson)
+                const resultyt = responseJson.items.map(obj => "https://www.youtube.com/embed/" + obj.snippet.resourceId.videoId);
+                //loops through items
+                //obj.snippet.title); 
+                this.setState({ resultyt });
+
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+        //test#1 >>console reads clicked when Hobby Search button is clicked
+        //console.log('clicked');
+    }
     render() {
         //console.log(finalURL) link appeared in console
+        console.log(this.state.resultyt)
         return (
-            <div className="youtube">
+            <div>
                 <button onClick={this.clicked}>Hobby Search</button>
-                <iframe 
-                    width="560" height="315" 
-                    src="https://www.youtube.com/embed/S9U_GcfPIFQ" title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
-                </iframe>
+                {
+                    this.state.resultyt.map((link, i) => {
+                        console.log(link);
+                        const frame = <div key={i} className="youtube"><iframe 
+                            width="560" height="315"
+                            src={link} title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                        </iframe></div>
+                        return frame;
+                    })
+                }
+                {this.frame}
+
+
             </div>
         );
     }
