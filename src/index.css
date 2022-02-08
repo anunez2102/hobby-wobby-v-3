@@ -10,6 +10,23 @@ label {
   color: #c1cbcc;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #272d33;
+  color: white
+}
+
+.nav-links {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
 .youtube {
   border: 3px dashed;
   margin-top:20px;

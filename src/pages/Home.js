@@ -3,9 +3,9 @@ import logo from '../images/logo.png'
 
 const Home = () => {
     return (
-        <div>
-            <img src={logo} alt="logo"/>
-        </div>
+       <h1>This is home</h1>
+            // <img src={logo} alt="logo"/>
+      
     );
 }
 
