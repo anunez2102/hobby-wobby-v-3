@@ -13,8 +13,12 @@ https://www.googleapis.com/youtube/v3/search?key=AIzaSyBo8jUQq40ADaLaobk9cje2k82
 Then used playlist parameters for the Youtube Page
 https://youtube.googleapis.com/youtube/v3/playlistItems?key=AIzaSyBo8jUQq40ADaLaobk9cje2k82iJKX2dNQ&playlistId=PLYwi9QXsi-wxBatNFolTGD5nWDx2IWgrM&part=snippet,id&order=date&maxResults=10
 
+Home Page with NavBar need to correct paths of routes/links as currently does not direct to the corresponding pages
+![home page](https://user-images.githubusercontent.com/93734293/153029474-27abfee1-b1dd-44ae-bfd6-3aa2778421d3.jpg)
+
 Youtube Page Button renders videos from my playlist
-![Youtube page button](https://user-images.githubusercontent.com/93734293/153028176-ad9b8439-f3c8-42c1-98cd-2447c7c5abe2.jpg)
+![Youtu![Uploading home page.jpg…]()
+be page button](https://user-images.githubusercontent.com/93734293/153028176-ad9b8439-f3c8-42c1-98cd-2447c7c5abe2.jpg)
 ![Youtube page button onclick](https://user-images.githubusercontent.com/93734293/153028155-90f79f16-576c-4786-a7ac-c18099a0fe54.jpg)
 
 VideoPlayer search needs to be enabled
