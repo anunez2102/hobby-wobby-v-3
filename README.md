@@ -13,4 +13,7 @@ https://www.googleapis.com/youtube/v3/search?key=AIzaSyBo8jUQq40ADaLaobk9cje2k82
 Then used playlist which made more sense with how I was setting up everything
 https://youtube.googleapis.com/youtube/v3/playlistItems?key=AIzaSyBo8jUQq40ADaLaobk9cje2k82iJKX2dNQ&playlistId=PLYwi9QXsi-wxBatNFolTGD5nWDx2IWgrM&part=snippet,id&order=date&maxResults=10
 
+Deploy failed
+![image](https://user-images.githubusercontent.com/93734293/153018350-06fa5359-e579-48a5-9aa1-c5d18b2c45b7.png)
+
 
