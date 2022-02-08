@@ -7,8 +7,6 @@ const finalURL = `https://www.googleapis.com/youtube/v3/playlistItems?key=${API}
 
 //https://youtube.googleapis.com/youtube/v3/playlistItems?key=AIzaSyBo8jUQq40ADaLaobk9cje2k82iJKX2dNQ&playlistId=PLYwi9QXsi-wxBatNFolTGD5nWDx2IWgrM&part=snippet,id&order=date&maxResults=10
 
-//test video was embedded into app
-
 //Search Overview
 //breaking down api request: https://www.googleapis.com/youtube/v3/search?key=AIzaSyBo8jUQq40ADaLaobk9cje2k82iJKX2dNQ&channelId=UCSQzo6K4ao4FqswtWAzvO9w&part=snippet,id&order=date&maxResults=10
 //https://www.googleapis.com/youtube/v3/search
